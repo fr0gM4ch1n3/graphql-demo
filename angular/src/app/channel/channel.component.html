@@ -1,0 +1,9 @@
+<div class="channelName">soccer</div>
+<div class="messagesList">
+  <div *ngFor="let message of messages | async" class="message">
+    <div>{{ message.text }}</div>
+  </div>
+  <div class="messageInput">
+    <input type="text" placeholder="New message" (keyup.enter)="newMessage($event)">
+  </div>
+</div>

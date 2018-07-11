@@ -1,0 +1,21 @@
+:host {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 30px;
+    text-align: left;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+:host:before {
+    content: "";
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    background-image: url(/assets/apollo-logo.svg);
+    background-size: contain;
+    margin-right: 10px;
+}
